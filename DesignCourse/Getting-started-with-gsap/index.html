@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/dist/main.css"/>
+    <title>GSAP</title>
+</head>
+<body>
+    <h1>Engineering for tomorrow</h1>
+    <button id="cta">watch here</button>
+    <div class="panel">
+        <img src="images\OIlMs-1490043017-embed-13.png" id="spider">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        <div class="box"></div>
+    </div>
+    
+</body>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js" integrity="sha512-IQLehpLoVS4fNzl7IfH8Iowfm5+RiMGtHykgZJl9AWMgqx0AmJ6cRWcB+GaGVtIsnC4voMfm8f2vwtY+6oPjpQ==" crossorigin="anonymous"></script>
+    <script>
+        document.getElementById('cta').addEventListener('click', () => {
+
+            gsap.to('.panel', {duration:1.5, scaleY: 1, height: '100vh', ease: Circ.easeOut});
+            gsap.to('#spider', {duration:1, opacity:1, y:0, delay:1, ease:"back"});
+            gsap.to('p', {duration:1, opacity:1, y:20, delay:1.4})
+            gsap.to('.box', {duration:3, opacity:1, scale:1, ease: Circ.easeOut})
+            
+        })
+    </script>
+</html>
