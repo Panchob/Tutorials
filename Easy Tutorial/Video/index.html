@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Video</title>
+</head>
+<body>
+    <div class="main-container">
+        <video autoplay muted loop plays-inline id="video">
+            <source src="./videos/video.mp4" type="video/mp4">
+        </video>
+        <div class="left-sidebar">
+            <div class="logo">
+                <img src="./images/logo.png">
+            </div>
+            <div class="company-name-container">
+                <div class="company-name">
+                    
+                    <h1>GOLDEN RESORT</h1>
+                    <h2>LUXURY LIVING</h2>
+                    <div class="line"></div>
+                </div>
+            </div>
+        </div>
+        <div class="maldives-text-container">
+            <h1>Maldives</h1>
+            <small>Nice apartments in the heart of Maldives</small>
+            <button id="playBtn" class=btn onclick="playPause()">Watch</button>
+        </div>
+    </div>
+</body>
+<script>
+    const video = document.getElementById("video");
+
+    const btn = document.getElementById("playBtn")
+
+    playPause = () => {
+        if (video.paused) {
+            video.play();
+            btn.innerText = "Pause";
+        } else {
+            video.pause();
+            btn.innerText = "Watch";
+        }
+    }
+</script>
+</html>

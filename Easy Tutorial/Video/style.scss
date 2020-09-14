@@ -1,0 +1,96 @@
+body {
+    padding: 0;
+    margin: 0;
+}
+
+.main-container {
+    background-image:url("./images/background.png");
+    background-size:cover;
+    overflow: hidden;
+}
+
+.left-sidebar {
+    display: grid;
+    grid-template-rows: 15% auto;
+    height: 100vh;
+    width: 17%;
+}
+
+.logo {
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-row-start: 1;
+    background-color: white;
+}
+
+.logo img {
+    height: 60px;
+
+}
+
+.company-name-container {
+    z-index: 1;
+    display:flex;
+    flex-direction: column;
+    grid-row-start: 2;
+    background-color: rgba(255, 255, 255, 0.561);
+    align-items: center;
+    justify-content: center;
+}
+
+.company-name {
+    transform: rotate(-90deg);
+}
+
+.company-name h2 {
+    text-align: center;
+}
+
+.company-name h1 {
+    text-align: center;
+    width: 280px;
+}
+
+.maldives-text-container {
+    display:flex;
+    flex-direction: column;
+    position:absolute;
+    top: 30vh;
+    left: 65vw;
+    color: white;
+}
+
+.maldives-text-container h1{
+    font-size: 100px;
+    margin: 0 0 30px
+}
+
+small{
+    font-size: 18px;
+}
+.btn {
+    background-color: transparent;
+    outline: none;
+    height: 50px;
+    width: 150px;
+    border: 2px solid white;
+    color:white;
+    font-size: 20px;
+    margin-top: 30px;
+    cursor: pointer;
+}
+
+#video{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+
+.line {
+    width: 100px;
+    height: 2px;
+    margin:auto;
+    background: black;
+}
